@@ -1,15 +1,13 @@
-import { Button, Control, Slider, StackPanel, TextBlock } from "@babylonjs/gui/2D";
+import { Control, StackPanel, TextBlock } from "@babylonjs/gui/2D";
 
 export default class ControlPanel {
     panel: StackPanel;
     fps_label: TextBlock;
-    gravity_slider: Slider;
-    start_button: Button;
 
     constructor() {
         this.panel = new StackPanel();
         this.panel.width = "100px";
-        this.panel.height = "100px";
+        this.panel.height = "50px";
         this.panel.background = "white";
         this.panel.horizontalAlignment = Control.HORIZONTAL_ALIGNMENT_LEFT;
         this.panel.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP;
