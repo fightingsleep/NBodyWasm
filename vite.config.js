@@ -12,5 +12,8 @@ export default defineConfig({
         require('autoprefixer')
       ]
     }
-  }
+  },
+  build:{
+    target: "es2022",
+   }
 })
